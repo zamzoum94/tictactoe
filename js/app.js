@@ -2,10 +2,13 @@ $(document).ready(()=>{
     $('#gameplay').hide();
     $('#init').html(init.template);
     $('#startGame').click(function() {
-        console.log('clicked')
+        $('#init').hide();
         let newPlayers = init.players();
-        console.log(newPlayers);
-        $('#gameplay').html(players.template);
+        players.initPlayer(newPlayers.player1, newPlayers.player2);
+        
+        $('#score').html(players.template(players.player1, players.player2))
+        $('#border').html(border.template);
+        console.log(border.template)
         $('#gameplay').show();
     });
 });
