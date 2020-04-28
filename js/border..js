@@ -46,10 +46,10 @@ let border = {
         </div>
         <div class = 'row'>
             <div class= 'col-md-2'>
-                <input type = 'button' value ='New Round' id='newRound'/>
+                <input type = 'button' value ='New Round' id='newRound' disabled/>
             </div>
             <div class= 'col-md-2 offset-md-2'>
-                <input type = 'button' value ='Stop Playing'id='newPlayers'/>
+                <input type = 'button' value ='Stop Playing' id='newPlayers' disabled/>
             </div>
         </div>
     `
