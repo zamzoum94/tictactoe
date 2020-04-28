@@ -1,4 +1,7 @@
 let border = {
+    winner : 1,
+    game : null,
+    count : null,
     template : `
         <div class = 'row'>
             <div class = 'col-md-2'>
@@ -10,43 +13,43 @@ let border = {
         </div>
         <div class = 'row'>
             <div class='col-md-2 bordure'>
+                <button class = 'btn-Game' id='00'></button>
+            </div>
+            <div class='col-md-2 bordure'>
+                <button class = 'btn-Game' id='01'></button>
+            </div>
+            <div class='col-md-2 bordure'>
+                <button class = 'btn-Game' id='02'></button>
+            </div>
+        </div>
+        <div class = 'row'>
+            <div class='col-md-2 bordure'>
+                <button class = 'btn-Game' id='10'></button>
+            </div>
+            <div class='col-md-2 bordure'>
                 <button class = 'btn-Game' id='11'></button>
             </div>
             <div class='col-md-2 bordure'>
                 <button class = 'btn-Game' id='12'></button>
             </div>
-            <div class='col-md-2 bordure'>
-                <button class = 'btn-Game' id='13'></button>
-            </div>
         </div>
         <div class = 'row'>
+            <div class='col-md-2 bordure'>
+                <button class = 'btn-Game' id='20'></button>
+            </div>
             <div class='col-md-2 bordure'>
                 <button class = 'btn-Game' id='21'></button>
             </div>
             <div class='col-md-2 bordure'>
                 <button class = 'btn-Game' id='22'></button>
             </div>
-            <div class='col-md-2 bordure'>
-                <button class = 'btn-Game' id='23'></button>
-            </div>
-        </div>
-        <div class = 'row'>
-            <div class='col-md-2 bordure'>
-                <button class = 'btn-Game' id='31'></button>
-            </div>
-            <div class='col-md-2 bordure'>
-                <button class = 'btn-Game' id='32'></button>
-            </div>
-            <div class='col-md-2 bordure'>
-                <button class = 'btn-Game' id='33'></button>
-            </div>
         </div>
         <div class = 'row'>
             <div class= 'col-md-2'>
-                ANOTHER ROUND?
+                <input type = 'button' value ='New Round' id='newRound'/>
             </div>
             <div class= 'col-md-2 offset-md-2'>
-                DONE PLAYING?
+                <input type = 'button' value ='Stop Playing'id='newPlayers'/>
             </div>
         </div>
     `

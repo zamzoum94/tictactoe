@@ -6,7 +6,7 @@ class Player{
 }
 
 let players = {
-    player1 : "tests",
+    player1 : null,
     player2 : null,
     initPlayer : function(firstPlayer, secondPlayer){
         this.player1 = new Player(firstPlayer);
